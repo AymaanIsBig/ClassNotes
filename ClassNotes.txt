@@ -1,0 +1,235 @@
+Cybersecurity Notes
+Table of Contents:
+1. Navigating Linux
+2. Nano
+3. Networking Terms
+4. 20 More Networking Terms
+5. How to Install VMware
+6. Layers of Operating System
+7. Components of a PC
+8. Memory Types
+9. How Data Transfers in a Network
+10. What is the internet?
+11. TCP and UDP
+12. Bit to Petabyte
+13. What is IP
+14. CUI and GUI 
+15. Hats
+16. git
+
+1. Navigating Linux 
+- ls
+Lists what directories and items are in the directory you are currently in.
+Will not show the contents of a file, use “get-content file.txt” instead.
+Example: Simply type “ls”.
+For a more in depth “ls” run the command, “ls-l”
+
+-dir
+Tells you what directory you are in
+
+-cd
+Changes the directory you are in to a different one.
+Example: cd ‘catfolder’.
+Tip: Use ls to list all the possible directories you can go to.
+
+-Root directory
+
+-pwd
+Purpose: Prints the current directory path.
+Usage: `pwd` to display the full path of the current directory.
+Tip: Useful for confirming your current location in the filesystem.
+
+-mkdir
+Creates a new directory (folder) like ‘home’.
+Similar to ‘new-item’ making a file
+Example: mkdir ‘catfolder’
+
+-rmdir
+Removes a directory
+Like ‘remove-item', removing an item
+Example: rmdir ‘catfolder’
+
+- new-item
+Creates a new file
+new-item “catfile”
+
+- remove-item
+Deletes a file
+remove-item “catfile”
+
+-mv
+Moves a file/folder to a new directory
+Mv “catfile” “catfolder”
+Can be used to rename a file by executing “mv old_catfile 
+
+-rename
+Renames a file or directory
+rename ‘s/old_catfile/new_dogfile/’ files
+
+-shutdown
+Executing this command shuts down the VM
+
+-get-date
+Gives the date
+
+-get-uptime
+Says how long the Ubuntu window has been open
+
+-get-location
+Tells you which directory you are in
+
+-python3
+Activates a python code
+python3 “catcode.py”
+
+2. Nano
+-nano
+Let's you edit a file through linux
+nano “file name” 
+now you can edit the contents of the file 
+3. Networking Terms
+1.	IP address (IPv4)
+Each device connected to a network has an IP address, a code for identifying each device and locating where they are. IPv4 is just a different type of IP address that looks like this: xxx.xxx.x.x.
+2.	Subnet Masks
+A subnet mask is a guide that tells a computer what parts of an IP address means, like what network a device is on and lets it know what the device on the network is. The first three number of an IP address (xxx.xxx.x) are the network, and the last one (x) is the device on the network.
+3.	Gateway
+A network gateway connects two different networks together so they can communicate.
+4.	DNS (Domain Name System)
+DNSs are servers used by computers to change domains that we can read, like www.google.com, into an IP address, so they can identify the network.
+5.	What is a network switch
+A network switch connects multiple devices and efficiently sends data to the device it’s supposed to go within a network in a home or office. 
+6.	What is a network router
+A network router connects networks together.
+7.	What are “access points”
+Access points let devices connect to the internet without the use of cables. It’s like if there are multiple routers around a mall, there are multiple points for you to access internet.
+8.	MAC address
+Every phone, laptop, and other devices like that has a unique MAC address that could look like this, “00:1A:2B:3C:4D:5E”. This address keeps all the devices that want to talk to each other from talking to each other and makes sure the message goes to the intended device.
+9.	What are “Ports” in network addressing
+In a computer system there are ports that lead to different apps and services, like how there are doors (ports), that lead to rooms (apps and services), that are in a house (computer).
+10.	Types of networks (WAN, LAN, PAN, MAN, and VPN)
+LAN connects computers and printers together in a building or campus, WAN connects LANs from different cities or countries, PAN connects phones and other personal devices in a room, MAN connects LANs in a campus or city, and VPN connect your device from anywhere using a secure network.
+
+4. 20 More Networking Terms
+1.	ipconfig
+Ipconfig tells you network info about your computer, like IP and MAC addresses.
+2.	ip
+A command for displaying routing, network devices, and interfaces.
+3.	traceroute
+Traceroute tell you every step your computer takes to connect to the internet and the errors it's making. 
+4.	tracepath
+Tracepath is traceroute but more complicated.
+5.	ping
+Ping confirms that your computer can connect to another computer on a server or the internet and how fast it can establish a connection.
+6.	netstat
+Netstat shows you information about the network connections on your computer. It can tell you which programs are using the network, and other things I don’t understand.
+7.	ss
+Ss is like netstat but ss is newer and give better info about connections.
+8.	dig
+Dig is used to look up information about internet domain names, helping you find details like IP addresses.
+9.	nslookup
+Nslookup is like dig but it’s more basic and gives info I can understand better, whereas dig is more advanced and helps the computer understand better instead.
+10.	route
+Route shows what path that information/data takes to get to and from computers on a network.
+11.	host
+Host is basically just nslookup.
+12.	arp
+Arp tells devices their MAC and IP addresses when they want to talk to each other.
+13.	iwconfig
+Iwconfig checks your Wi-Fi connection and can change Wi-Fi settings.
+14.	hostname
+Just typing ‘hostname’ will tell you the network name of the computer. Typing ‘hostname’ then another word will set a new hostname.
+15.	curl or wget
+Wget can download any URL (usually a file) off the internet, and it downloads it.
+16.	mtr
+Mtr is a combination of ping and traceroute
+17.	whois
+Running ‘whois’ then a domain name will talk about it. It says things like, who owns the domain, their contact information, when the domain was registered, and when it expires.
+18.	ifplugstatus
+Ifplugstatus says whether it's connected to a network or not.
+19.	iftop
+Iftop shows which programs are using a network and how much data they’re sending and receiving.
+20.	tcpdump
+
+5. How to Install VMware
+Step 1. 
+
+6. Layers of an Operating System
+OS
+File Systems
+Shell – Whenever you type or click, the shell takes that information you are sending through and translates into the computer to put letters on a document or open a file.
+Kernal – Makes sure all parts of the computer are doing what they need to do and if they are working together well.
+BIOS
+Firmware
+Hardware
+
+7. Components of a PC
+Processor (CPU)
+The processor is what makes programs run and runs it quicker if it has more cores. The CPU is for temporary info that is happening now and makes all the programs run.
+Memory (RAM)
+Memory holds information for a bit when there is a lot of traffic just after you open a program, then hands responsibility off to the processor. Usually volatile memory.
+Storage
+Long term data storage like SSD or hard drive and remains on the computer regardless of if the computer is on or off. Non-Volatile memory.
+
+Graphics Card (GPU)
+A graphics card is a type of processor that handles things that relate to visuals. I would be in charge of processing high-definition pictures and providing the smooth look of a video or game.
+CPU cooler
+A cooler for a CPU uses air or water-cooling systems to keep the CPU at an acceptable temperature to make sure it doesn’t fail or overclock.
+Motherboard
+Connects all the hardware and lets them talk to each other and work together.
+Power supply
+It is important to have a power supply that reaches your computer's wattage needs but does not give too much or too little power. Think of it as a fire hose level of water pressure for your sink and a sink level water pressure for a fire hose.
+Case
+Your case is what houses all parts of your computer, so everything is well connected, and all the parts don’t just lie on the floor. But it isn’t a good idea for it to just be a box, there should be air vents built into it or tubes for water cooling running through it to keep the computer temp at a medium.
+8. Memory Types
+1. Volatile memory
+2. Non-Volatile memory
+•	What is volatile memory?
+o	Volatile memory stores information while your computer is running and using a program but is lost when your computer is turned off.
+•	What are some examples of volatile memory?
+o	RAM
+o	Cache Memory
+o	Registers
+•	What is non-volatile memory?
+o	Non-volatile memory stores information in your computer that will last forever.
+•	What are some examples of non-volatile memory?
+o	SSD
+o	HHD
+o	Hard drive
+9. How Data Transfers in a Network
+To transfer information between each other, we put a router between our desks. In our pod, we unplugged the ethernet cables running into each of our computers and replaced them with the cables hooked up to the router. Once they were all running on the router internet, we used the Linux wall and write commands to talk to each other through the router.
+
+10. What is the internet?
+The internet is a bunch of devices all connected on a network.
+
+11. TCP and UDP
+TCP is a transmission protocol that delivers information between two devices and requires a response from the device receiving info acknowledging they received the data.
+UDP is a communication protocol that sends a message between two devices without getting confirmation with the other device that the info was sent.
+
+12. Bit to Petabyte
+There are 8 bits in a byte
+There are 1024 bytes in a kilobyte
+There are 1024 kilobytes in a megabyte
+There are 1024 megabytes in a gigabyte
+There are 1024 gigabytes in a terabyte
+There are 1024 terabytes in a petabyte
+Computers use bits to represent and store data. 
+
+13. What is IP?
+Put simply, IP is used to identify and locate a device on a network. An IP address is given to each device to do this. IP addresses work off binary.
+IPV4 is a series of IP addresses that go from 0.0.0.1 to 255.255.255.255. There are 4 billion total IP addresses that work off IPV4. Because there are more than 4 billion devices in the world, they are used in local areas.
+IPV6, double IPV4 addresses, 300 trillion
+
+14. CLI and GUI
+CLI, or Command Line Interface, is a powerful tool for Linux and bash users to efficiently manage files, change permissions, and have greater control in systems without a graphical interface.
+GUI stands for graphical user interface. It's the computer's user-friendly, visual home screen.
+
+15. Hats
+Black hat = Malicious (evil) 
+White hat = not malicious, ethical, get permission
+Red hat = infiltrate and damage (red vs blue: Fortnite red side) (offense)
+Blue hat = protects and defends (red vs blue: Fortnite blue side) (defense)
+
+16. git
+
+
+
