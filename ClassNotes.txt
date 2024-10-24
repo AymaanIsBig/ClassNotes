@@ -231,5 +231,10 @@ Blue hat = protects and defends (red vs blue: Fortnite blue side) (defense)
 
 16. git
 
+open a new gut repo 
+git init 
+
+check git status
+git status
 
 
