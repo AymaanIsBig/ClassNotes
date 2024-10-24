@@ -25,7 +25,8 @@ Example: Simply type “ls”.
 For a more in depth “ls” run the command, “ls-l”
 
 -dir
-Tells you what directory you are in
+Tells you what directo
+ry you are in
 
 -cd
 Changes the directory you are in to a different one.
@@ -47,7 +48,8 @@ Example: mkdir ‘catfolder’
 -rmdir
 Removes a directory
 Like ‘remove-item', removing an item
-Example: rmdir ‘catfolder’
+Example: rmdir ‘catfolder
+’
 
 - new-item
 Creates a new file
@@ -61,6 +63,7 @@ remove-item “catfile”
 Moves a file/folder to a new directory
 Mv “catfile” “catfolder”
 Can be used to rename a file by executing “mv old_catfile 
+
 
 -rename
 Renames a file or directory
@@ -175,12 +178,18 @@ A graphics card is a type of processor that handles things that relate to visual
 CPU cooler
 A cooler for a CPU uses air or water-cooling systems to keep the CPU at an acceptable temperature to make sure it doesn’t fail or overclock.
 Motherboard
-Connects all the hardware and lets them talk to each other and work together.
+Renames a file or directory
+rename ‘s/old_catfile/new_dogfile/’ files
+Conne
+Renames a file or directory
+rename ‘s/old_catfile/new_dogfile/’ files
+cts all the hardware and lets them talk to each other and work together.
 Power supply
 It is important to have a power supply that reaches your computer's wattage needs but does not give too much or too little power. Think of it as a fire hose level of water pressure for your sink and a sink level water pressure for a fire hose.
 Case
 Your case is what houses all parts of your computer, so everything is well connected, and all the parts don’t just lie on the floor. But it isn’t a good idea for it to just be a box, there should be air vents built into it or tubes for water cooling running through it to keep the computer temp at a medium.
 8. Memory Types
+
 1. Volatile memory
 2. Non-Volatile memory
 •	What is volatile memory?
@@ -237,4 +246,28 @@ git init
 check git status
 git status
 
+configure user name and email 
+git config --global user.name "your name"
+git config --global user.email "your@email.com"
+
+add files to the staging area
+git add "filename"
+
+add to a specific file 
+git add . 
+
+to make a commit 
+git commit -m "Commit message"
+
+check git log 
+git log 
+
+switch to an existing branch 
+git checkout -b branchname
+
+create and switch to a new branch 
+git checkout -b newbranch
+
+veiw all branches
+git branch 
 
