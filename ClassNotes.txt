@@ -271,3 +271,17 @@ git checkout -b newbranch
 veiw all branches
 git branch 
 
+17. Bash scripts
+
+while: starts a loop. repeating a cycle of a specfic block of code
+
+true: meaning keep looping forever until "break" is used
+
+break: used to exit/end a loop
+
+if: starts a condition check
+
+then: tells the script what do to if the condition is true
+
+fi: makrs the end of a if statement
+
