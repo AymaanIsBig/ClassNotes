@@ -285,3 +285,9 @@ then: tells the script what do to if the condition is true
 
 fi: makrs the end of a if statement
 
+echo: print/show text or value of a variable to the terminal screen
+
+read: takes input from the user and stores it inside of a variable
+
+
+
